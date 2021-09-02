@@ -12,17 +12,19 @@ I main() {
 }
 
 void strsub(char strr[], I ed, I de) {
-	I strt = strlen(strr);
-	I i;
-	I x = strt -1;
-	I total[x];
-	for(i = 0;i < strt; i++) {
-		total[i] = i;
-		if (ed && i < ed) {
-            strr[i] = '\b';
-		}
-		if (de && x -de < i){
-            strr[i] = '\b';
-		}
-	}
+  I strt = strlen(strr);
+  I x = strt - 1;
+  I a;
+  I b = -1;
+  if (ed) {
+    for (a = ed; a <= strt; a++) {
+      b++;
+      strr[b] = strr[a];
+    }
+  }
+  if (de) {
+    strt = strlen(strr);
+    I rde = strt - de;
+    strr[rde] = strr[strt + 2];
+  }
 }
