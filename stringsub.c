@@ -14,8 +14,7 @@ I main() {
 void strsub(char strr[], I ed, I de) {
   I strt = strlen(strr);
   I x = strt - 1;
-  I a;
-  I b = -1;
+  I a; I b = -1;
   if (ed) {
     for (a = ed; a <= strt; a++) {
       b++;
