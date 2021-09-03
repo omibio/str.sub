@@ -23,6 +23,6 @@ void strsub(char strr[], I ed, I de) {
   if (de) {
     strt = strlen(strr);
     I rde = strt - de;
-    strr[rde] = strr[strt + 2];
+    strr[rde] = strr[-1];
   }
 }
