@@ -18,7 +18,7 @@ void strsub(char strr[], int ed, int de) {
 
 int main() {
   char str[55] = "teste";
-	strsub(str, 2, 1);
-	printf("%s", str);
-	return 0;
+  strsub(str, 2, 1);
+  printf("%s", str);
+  return 0;
 }
